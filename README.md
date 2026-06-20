@@ -1,2 +1,2 @@
 # react-okf
-The OKF-based knowledge pack for Boone installation
+The OKF-based knowledge pack for React for Boone installation
