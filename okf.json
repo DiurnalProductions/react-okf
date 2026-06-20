@@ -1,0 +1,8 @@
+{
+  "id": "react-okf",
+  "name": "React Knowledge Pack",
+  "version": "0.1",
+  "description": "OKF knowledge base for React fundamentals",
+  "entry": "index.md",
+  "tags": ["react", "frontend", "javascript", "ui"]
+}
