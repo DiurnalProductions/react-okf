@@ -1,15 +1,14 @@
 ---
-id: react.events
-type: concept
+type: Concept
 title: Events
 description: Handling user interactions with synthetic events in React
 tags: [react, events, interactions]
 prerequisites:
-  - react.state
+  - concepts/state
 related:
-  - react.state
-resource: https://react.dev/learn/responding-to-events
-timestamp: 2026-01-01
+  - concepts/state
+resource: "https://react.dev/learn/responding-to-events"
+timestamp: 2026-07-06
 ---
 
 ## Summary
@@ -18,7 +17,7 @@ React wraps native browser events in **SyntheticEvents** — a cross-browser nor
 
 ## Mental model
 
-Events are **the bridge between user action and state change**. Unlike effects (which synchronize after render), events respond to explicit user gestures. React 17+ attaches listeners at the root, not per element. Event handlers should be lean — perform the action, update state, and delegate heavy work elsewhere. Use `e.preventDefault()` and `e.stopPropagation()` when needed, same as native events.
+Events are **the bridge between user action and state change**. Unlike effects (which synchronize after render), events respond to explicit user gestures. React attaches listeners at the root container rather than per element. Since React 19, form elements can also take a function as `action`/`formAction`, which integrates submission with transitions, `useActionState`, and `useOptimistic`. Event handlers should be lean — perform the action, update state, and delegate heavy work elsewhere. Use `e.preventDefault()` and `e.stopPropagation()` when needed, same as native events.
 
 ## Example
 

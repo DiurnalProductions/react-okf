@@ -1,21 +1,20 @@
 ---
-id: react.router
-type: concept
+type: Concept
 title: Router
 description: Client-side routing that maps URLs to components in single-page applications
 tags: [react, routing, spa]
 prerequisites:
-  - react.components
-  - react.hooks
+  - concepts/components
+  - concepts/hooks
 related:
-  - react.components
-resource: https://reactrouter.com
-timestamp: 2026-01-01
+  - concepts/components
+resource: "https://reactrouter.com"
+timestamp: 2026-07-06
 ---
 
 ## Summary
 
-A React router maps URL paths to components, enabling multi-page-like navigation without full server round-trips. Libraries such as React Router provide declarative routing via components (`<Routes>`, `<Route>`) or data APIs. The router listens to history changes and renders the matching component tree.
+A React router maps URL paths to components, enabling multi-page-like navigation without full server round-trips. Libraries such as React Router provide declarative routing via components (`<Routes>`, `<Route>`) or data APIs (loaders and actions). React Router v7 (which absorbed Remix) can also run as a full framework with server rendering, while remaining usable as the plain library shown below. The router listens to history changes and renders the matching component tree.
 
 ## Mental model
 

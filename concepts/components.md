@@ -1,21 +1,20 @@
 ---
-id: react.components
-type: concept
+type: Concept
 title: Components
-description: Reusable, composable units that describe pieces of UI
+description: "Reusable, composable units that describe pieces of UI"
 tags: [react, components]
 prerequisites:
-  - react.jsx
+  - concepts/jsx
 related:
-  - react.props
-  - react.rendering
-resource: https://react.dev/learn/your-first-component
-timestamp: 2026-01-01
+  - concepts/props
+  - concepts/rendering
+resource: "https://react.dev/learn/your-first-component"
+timestamp: 2026-07-06
 ---
 
 ## Summary
 
-Components are the building blocks of a React application. A component is a JavaScript function (or, historically, a class) that accepts props and returns JSX describing what should appear on screen. Components compose — you build complex UIs by nesting simple components.
+Components are the building blocks of a React application. A component is a JavaScript function (or, historically, a class) that accepts props and returns JSX describing what should appear on screen. Components compose — you build complex UIs by nesting simple components. In frameworks with React Server Components, components split into server components (render ahead of time, can access data directly, ship no JS) and client components (marked `'use client'`, handle state and interactivity).
 
 ## Mental model
 
@@ -45,6 +44,7 @@ function ProfileCard({ user }) {
 - Using PascalCase inconsistently — only capitalized names are treated as components.
 - Putting side effects directly in the render body instead of event handlers or effects.
 - Creating overly large "god components" instead of composing smaller ones.
+- Wrapping components in `forwardRef` out of habit — since React 19, `ref` is a regular prop on function components.
 
 ## Related concepts
 

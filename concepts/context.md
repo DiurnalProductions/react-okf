@@ -1,20 +1,19 @@
 ---
-id: react.context
-type: concept
+type: Concept
 title: Context
 description: Sharing values across the component tree without prop drilling
 tags: [react, context]
 prerequisites:
-  - react.effects
+  - concepts/effects
 related:
-  - react.props
-resource: https://react.dev/learn/passing-data-deeply-with-context
-timestamp: 2026-01-01
+  - concepts/props
+resource: "https://react.dev/learn/passing-data-deeply-with-context"
+timestamp: 2026-07-06
 ---
 
 ## Summary
 
-Context provides a way to pass data through the component tree without manually passing props at every level. A provider component supplies a value; any descendant can consume it with `useContext`. Context is ideal for globally relevant, infrequently changing data like themes, locale, or authentication.
+Context provides a way to pass data through the component tree without manually passing props at every level. A provider component supplies a value; any descendant can consume it with `useContext` (or React 19's `use`, which may also be called conditionally). Since React 19 the context object itself can be rendered as the provider — `<ThemeContext value={...}>` instead of `<ThemeContext.Provider value={...}>`. Context is ideal for globally relevant, infrequently changing data like themes, locale, or authentication.
 
 ## Mental model
 

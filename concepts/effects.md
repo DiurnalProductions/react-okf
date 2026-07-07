@@ -1,14 +1,13 @@
 ---
-id: react.effects
-type: concept
+type: Concept
 title: Effects
 description: Synchronizing components with external systems via useEffect
 tags: [react, effects, useEffect]
 prerequisites:
-  - react.hooks
+  - concepts/hooks
 related:
-  - react.hooks
-resource: https://react.dev/learn/synchronizing-with-effects
+  - concepts/hooks
+resource: "https://react.dev/learn/synchronizing-with-effects"
 timestamp: 2026-01-01
 ---
 

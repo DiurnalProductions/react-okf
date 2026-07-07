@@ -1,12 +1,11 @@
 ---
-id: react.jsx
-type: concept
+type: Concept
 title: JSX
 description: Syntax extension for describing UI structure in JavaScript
 tags: [react, jsx, syntax]
 related:
-  - react.components
-resource: https://react.dev/learn/writing-markup-with-jsx
+  - concepts/components
+resource: "https://react.dev/learn/writing-markup-with-jsx"
 timestamp: 2026-01-01
 ---
 

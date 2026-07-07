@@ -1,3 +1,12 @@
+---
+okf_version: "0.1"
+id: react-okf
+name: React Knowledge Pack
+version: "0.1"
+description: OKF knowledge base for React fundamentals
+tags: [react, frontend, javascript, ui]
+---
+
 # React Knowledge Pack
 
 A self-contained OKF knowledge bundle for React fundamentals. Install this pack into any OKF-compatible client to browse concepts, follow prerequisites, and traverse the concept graph.

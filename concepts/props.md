@@ -1,16 +1,15 @@
 ---
-id: react.props
-type: concept
+type: Concept
 title: Props
 description: Read-only inputs passed from parent components to children
 tags: [react, props, data-flow]
 prerequisites:
-  - react.components
+  - concepts/components
 related:
-  - react.state
-  - react.context
-resource: https://react.dev/learn/passing-props-to-a-component
-timestamp: 2026-01-01
+  - concepts/state
+  - concepts/context
+resource: "https://react.dev/learn/passing-props-to-a-component"
+timestamp: 2026-07-06
 ---
 
 ## Summary
@@ -19,7 +18,7 @@ Props (short for properties) are read-only arguments passed from a parent compon
 
 ## Mental model
 
-Props are like **function parameters for UI**. The parent owns the data; the child receives a snapshot. When props change, React re-renders the child with the new values. Props can be any JavaScript value: strings, numbers, objects, arrays, or even other components (the `children` prop).
+Props are like **function parameters for UI**. The parent owns the data; the child receives a snapshot. When props change, React re-renders the child with the new values. Props can be any JavaScript value: strings, numbers, objects, arrays, or even other components (the `children` prop). Since React 19, `ref` is also just a prop — function components receive it directly without `forwardRef`.
 
 ## Example
 

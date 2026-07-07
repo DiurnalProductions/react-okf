@@ -1,16 +1,15 @@
 ---
-id: react.state
-type: concept
+type: Concept
 title: State
 description: Mutable data owned by a component that triggers re-renders when updated
 tags: [react, state]
 prerequisites:
-  - react.props
+  - concepts/props
 related:
-  - react.hooks
-  - react.events
-resource: https://react.dev/learn/state-a-components-memory
-timestamp: 2026-01-01
+  - concepts/hooks
+  - concepts/events
+resource: "https://react.dev/learn/state-a-components-memory"
+timestamp: 2026-07-06
 ---
 
 ## Summary
@@ -19,7 +18,7 @@ State is data that a component owns and can change over time. When state updates
 
 ## Mental model
 
-Think of state as a component's **internal memory**. Unlike props (which flow down from parents), state is local. Updating state does not modify the existing value in place — React replaces it with a new value and re-runs the component function. State updates are asynchronous and may be batched for performance.
+Think of state as a component's **internal memory**. Unlike props (which flow down from parents), state is local. Updating state does not modify the existing value in place — React replaces it with a new value and re-runs the component function. State updates are asynchronous, and since React 18 they are automatically batched everywhere — event handlers, promises, timeouts — so multiple `set` calls in one tick produce a single re-render.
 
 ## Example
 

@@ -1,15 +1,14 @@
 ---
-id: react.rendering
-type: concept
+type: Concept
 title: Rendering
 description: How React reconciles component trees and commits updates to the DOM
 tags: [react, rendering, reconciliation]
 prerequisites:
-  - react.components
+  - concepts/components
 related:
-  - react.components
-resource: https://react.dev/learn/render-and-commit
-timestamp: 2026-01-01
+  - concepts/components
+resource: "https://react.dev/learn/render-and-commit"
+timestamp: 2026-07-06
 ---
 
 ## Summary
@@ -18,7 +17,7 @@ Rendering is the process by which React turns component functions into a UI desc
 
 ## Mental model
 
-Rendering has three phases: **trigger** (state/props change), **render** (call components, produce a new element tree), and **commit** (apply DOM changes, run layout effects). Re-rendering does not always mean the DOM changes — React may bail out if output is identical. Keys help React match list items across renders. Strict Mode double-invokes renders in development to surface side effects.
+Rendering has three phases: **trigger** (state/props change), **render** (call components, produce a new element tree), and **commit** (apply DOM changes, run layout effects). With concurrent rendering (React 18+), non-urgent renders started inside `startTransition` can be interrupted and restarted so urgent updates like typing stay responsive. Re-rendering does not always mean the DOM changes — React may bail out if output is identical. Keys help React match list items across renders. Strict Mode double-invokes renders in development to surface side effects.
 
 ## Example
 
